@@ -4,7 +4,7 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.secret_key = 'fbc9f7995c83144b6a9813067a741686ac98b2a29a7bb2aec9bd278346813b0f88fbc94a7b5b3986da4eda5b1d6b0fea464adb2a39612e91ff4e4221369dda33'
+  config.secret_key = ENV.fetch("DEVISE_SECRET_KEY")
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.

@@ -14,10 +14,8 @@ Rails.application.routes.draw do
   #
   # get 'sessions/failure'
   #
-  get   '/login', :to => 'sessions#new', :as => :login
-  get '/logout', :to => 'sessions#destroy'
-
-
+  get '/login', to: 'sessions#new', as: :login
+  get '/logout', to: 'sessions#destroy'
 
   # devise_scope :user do
   #   get 'sign_in', :to => 'devise/sessions#new', :as => :new_user_session

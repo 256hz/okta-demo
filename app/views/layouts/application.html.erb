@@ -19,6 +19,7 @@
   <div class="item">
     <% if !session[:oktastate] %>
     <%= link_to "Sign In Or Sign Up", user_oktaoauth_omniauth_authorize_path %>
+    <!-- <a href="https://dev-686511.okta.com/oauth2/v1/authorize?idp=0oa17rcldsZ0yFznf357&client_id=0oa17rclpzOe4innY357&response_type=id_token&response_mode=fragment&scope=openid profile email&redirect_uri=http://localhost:3000/users/omniauth_callbacks&state=secret&nonce=password">Sign In / Sign Up</a> -->
     <% else %>
     <%= link_to "App Dashboard", users_path(), class: "item"%>
     <%= link_to session[:oktastate][:info][:name], user_path(session[:oktastate][:uid]), class: "item" %>

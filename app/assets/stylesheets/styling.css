@@ -1,7 +1,7 @@
 body {
   background-color: red;
   color: red;
-  background: url("/assets/spikey.png") no-repeat;
+  background: url("/assets/images/spikey.png") no-repeat;
   background-position: center;
 }
 
@@ -17,7 +17,7 @@ body {
 #railsLogo {
   width: 25%;
   height: 25%;
-  background: url("/assets/rails.png") no-repeat;
+  background: url("/assets/images/rails.png") no-repeat;
   background-position: center;
 }
 
